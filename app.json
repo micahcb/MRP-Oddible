@@ -1,0 +1,72 @@
+{
+  "expo": {
+    "name": "oddible",
+    "slug": "oddible",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.oddible.oddible",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.oddible.oddible"
+    },
+    "web": {
+      "bundler": "webpack",
+      "favicon": "./assets/favicon.png"
+    },
+    "sdkVersion": "52.0.0",
+    "extra": {
+      "eas": {
+        "projectId": "def05d4d-f7fa-459f-9fbb-935bc2b5f83a"
+      }
+    },
+    "runtimeVersion": "1.0.0",
+    "updates": {
+      "url": "https://u.expo.dev/def05d4d-f7fa-459f-9fbb-935bc2b5f83a"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://oddible.ai"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow this app to use your location."
+        }
+      ],
+      [
+        "react-native-auth0",
+        {
+          "domain": "dev-su0n4jpdks2kcbvp.us.auth0.com"
+        }
+      ],
+      [
+        "@stripe/stripe-react-native",
+        {
+          "merchantIdentifier": "merchant.com.micahcb.SBAPP",
+          "publishableKey": "pk_test_51Nm0vBHM5Jv8uc5MarlzIYh59q2OatBYSZf2DKwsf0GqvX2XExGupnaVaEjToZIYtSb1X8Hq7Bw7ShaCODmts4Ew00zUScRVpE"
+        }
+      ]
+    ],
+    "owner": "oddible"
+  }
+}
